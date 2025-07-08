@@ -1,0 +1,19 @@
+{
+  "name": "cafeteriatorocafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+ "scripts": {
+  "build": "webpack"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "firebase": "^11.10.0"
+  }
+}

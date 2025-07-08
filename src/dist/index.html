@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToroCafe</title>
+    <!-- Firebase SDKs -->
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #c1e1c1 0%, #f8fafc 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-container {
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.15);
+            padding: 2.5rem 2.5rem 2rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 95vw;
+            width: 400px;
+            transition: box-shadow 0.2s;
+        }
+        .logo {
+            width: 220px;
+            max-width: 70vw;
+            margin-bottom: 1.5rem;
+            border-radius: 18px;
+            box-shadow: 0 2px 12px rgba(76, 175, 80, 0.10);
+            transition: transform 0.2s;
+        }
+        .logo:hover {
+            transform: scale(1.04) rotate(-2deg);
+            box-shadow: 0 8px 32px 0 rgba(60, 60, 60, 0.18);
+        }
+        .welcome-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #388e3c;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        .welcome-desc {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .login-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #4CAF50 60%, #388e3c 100%);
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 0.9rem 2.2rem;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(76, 175, 80, 0.15);
+            transition: background 0.2s, transform 0.1s;
+            letter-spacing: 1px;
+        }
+        .login-btn:hover {
+            background: linear-gradient(90deg, #388e3c 60%, #4CAF50 100%);
+            transform: translateY(-2px) scale(1.03);
+        }
+        @media (max-width: 600px) {
+            .main-container {
+                padding: 1.2rem 0.5rem 1rem 0.5rem;
+                border-radius: 14px;
+                width: 98vw;
+            }
+            .logo {
+                width: 120px;
+                max-width: 90vw;
+            }
+            .welcome-title {
+                font-size: 1.2rem;
+            }
+            .welcome-desc {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <img src="logo.jpg" alt="ToroCafe" class="logo">
+        <div class="welcome-title">
+            ¡Bienvenido a ToroCafe!
+        </div>
+        <div class="welcome-desc">
+            Disfruta de nuestro menú digital y realiza tu pedido fácil y rápido.<br>
+            Haz clic para iniciar sesión y comenzar tu experiencia.
+        </div>
+        <a href="login.html" class="login-btn">
+            <i class="fa fa-sign-in-alt"></i> Iniciar sesión
+        </a>
+    </div>
+</body>
+</html>
